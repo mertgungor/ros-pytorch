@@ -12,6 +12,31 @@
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+
+  <exec_depend>gazebo_plugins</exec_depend>
+  <exec_depend>gazebo_plugins</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>gazebo_ros_pkgs</exec_depend>
+  <exec_depend>ros2_controllers</exec_depend>
+  <exec_depend>gazebo_ros2_control</exec_depend>
+  <exec_depend>ros2_control</exec_depend>
+  <exec_depend>ros2_controllers</exec_depend>
+  <exec_depend>librealsense2</exec_depend>
+  <exec_depend>rtabmap</exec_depend>
+  <exec_depend>rtabmap_launch</exec_depend>
+
+  <exec_depend>joint_state_controller</exec_depend>
+
+
+
+  <depend>joint_trajectory_controller</depend>
+  <depend>effort_controllers</depend>
+
+
+  <build_export_depend>pluginlib</build_export_depend>
+
   <export>
     <build_type>ament_cmake</build_type>
   </export>

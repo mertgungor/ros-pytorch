@@ -1,6 +1,6 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:property name="M_PI" value="3.1415926535897931" />
-  <xacro:macro name="depth_sensor" params="*origin camera_link:=camera_link camera_name:=camera">
+  <xacro:macro name="depth_sensor" params="*origin camera_link:=camera_link camera_name:=camera parent:=base">
     <link name="${camera_link}">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -40,8 +40,8 @@
       </visual> 
     </gazebo>rgb(213,28,40)
 
-    <joint name="${camera_name}_to_base_link" type="fixed">
-      <parent link="base_link"/>
+    <joint name="${camera_name}_to_${parent}" type="fixed">
+      <parent link="${parent}"/>
       <child link="${camera_link}"/>
       <xacro:insert_block name="origin" />
     </joint>
